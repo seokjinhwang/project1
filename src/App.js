@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Typography, Box } from "@mui/material";
 import PortfolioForm from "./components/PortfolioForm";
 import PortfolioList from "./components/PortfolioList";
+import TopGainers from "./components/TopGainers";
 import { getCurrentPrices } from "./services/upbitService";
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
         <Typography variant="h4" component="h1" gutterBottom align="center">
           포트폴리오 트래커
         </Typography>
+        <Box sx={{ mb: 4 }}>
+          <TopGainers />
+        </Box>
         <PortfolioForm onAdd={handleAddPortfolio} />
         <PortfolioList
           portfolio={portfolio}
