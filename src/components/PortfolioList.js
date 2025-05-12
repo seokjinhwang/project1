@@ -28,9 +28,7 @@ function PortfolioList({ portfolio, currentPrices, onDelete }) {
 
   return (
     <Paper sx={{ p: 3 }}>
-      <Typography variant="h6" gutterBottom>
-        포트폴리오 현황
-      </Typography>
+      <Typography variant="h6" gutterBottom></Typography>
       <TableContainer>
         <Table>
           <TableHead>

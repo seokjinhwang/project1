@@ -52,6 +52,7 @@ function TopGainers() {
           <TableHead>
             <TableRow>
               <TableCell>티커</TableCell>
+              <TableCell>이름</TableCell>
               <TableCell align="right">현재가</TableCell>
               <TableCell align="right">변동가</TableCell>
               <TableCell align="right">변동률</TableCell>
@@ -62,6 +63,7 @@ function TopGainers() {
             {gainers.map((coin) => (
               <TableRow key={coin.ticker}>
                 <TableCell>{coin.ticker}</TableCell>
+                <TableCell>{coin.marketName}</TableCell>
                 <TableCell align="right">
                   {coin.currentPrice.toLocaleString()}원
                 </TableCell>
